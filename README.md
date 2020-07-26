@@ -8,7 +8,7 @@ docker build -t 117503445/go_docker -f Dockerfile_cn .
 docker rm go_docker -f
 docker rmi 117503445/go_docker
 
-docker run --name go_docker -d -e var1="dockervar1" -e var2="dockervar1" -p 80:80 --restart=always 117503445/go_docker:latest
+docker run -it --name go_docker -d -e var1="dockervar1" -e var2="dockervar1" -p 80:80 --restart=always 117503445/go_docker:latest
 
 ## 项目地址
 
