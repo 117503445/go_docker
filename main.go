@@ -16,7 +16,7 @@ func main() {
 	fmt.Println(AppConfig.var2)
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
-		_, _ = c.Writer.WriteString("hello, world" + AppConfig.var1 + AppConfig.var2)
+		_, _ = c.Writer.WriteString("hello, world" + AppConfig.var1 + AppConfig.var2 + "20210121 185322")
 	})
 	_ = r.Run("0.0.0.0:80")
 }
